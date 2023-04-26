@@ -1,0 +1,3 @@
+openai
+PyQt5
+pillow

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+<class>MainWindow</class>
+<widget class="QMainWindow" name="MainWindow">
+ <property name="geometry">
+  <rect>
+   <x>0</x>
+   <y>0</y>
+   <width>800</width>
+   <height>600</height>
+  </rect>
+ </property>
+ <property name="windowTitle">
+  <string>Mon patronus</string>
+ </property>
+ <property name="styleSheet">
+  <string notr="true">QWidget#main_widget{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(144, 207, 255, 255), stop:1 rgba(255, 255, 255, 255));
+}
+
+QPushButton {
+ background-color: white;
+ color: black;
+ border: 2px solid #008CBA;
+ border-radius: 10px;
+}
+QPushButton:hover {
+ background-color: #008CBA;
+ color: white;
+}
+
+QLineEdit{
+ border-radius: 15px;
+}
+
+QTextEdit{
+ color:white;
+}
+
+QProgressBar{
+ border: 2px solid black;
+ border-radius:10px;
+ background-color:#323232;
+}
+
+QProgressBar::chunk {
+ border-radius:20px;
+ background-color:blue;
+ margin: 0.5px;
+}
+
+QLabel{
+font:bold;
+}</string>
+ </property>
+ <widget class="QWidget" name="main_widget">
+  <widget class="QPushButton" name="generate_patronus_button">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>490</y>
+     <width>151</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Quel est mon
+patronus ?</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="title_label">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>10</y>
+     <width>312</width>
+     <height>55</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>28</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(72, 75, 108);</string>
+   </property>
+   <property name="text">
+    <string>Mon patronus</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>100</y>
+     <width>611</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Quelle est votre activité favorite ?</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="activity_line_edit"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Quelle est votre saison ?</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="season_line_edit"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Quel est votre couleur ?</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="color_line_edit"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Quel est votre plat préféré ?</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="favorite_meal_line_edit"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>Quel est votre émotion préférée ?</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="emotion_line_edit"/>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+</widget>
+<resources/>
+<connections/>
+</ui>
